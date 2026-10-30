@@ -1,0 +1,79 @@
+{
+  "fairness_metrics": {
+    "demographic_parity_ratio": 0.920658455373234,
+    "disparate_impact": 0.8229199495745352,
+    "equalized_odds_difference": 0.08176722716782059
+  },
+  "targets_passed": {
+    "equalized_odds_difference": false,
+    "demographic_parity_ratio": true,
+    "disparate_impact": true
+  },
+  "bias_detected": true,
+  "matched_pair_mean_gap_pct": 3.266318744103916,
+  "feature_importance": [
+    {
+      "feature": "cat__location_Remote (International Client)",
+      "importance": 0.4557159026175273
+    },
+    {
+      "feature": "num__years_experience",
+      "importance": 0.08065754025160943
+    },
+    {
+      "feature": "cat__company_size_Large (250+ employees)",
+      "importance": 0.04507811195113521
+    },
+    {
+      "feature": "cat__job_category_Web Development",
+      "importance": 0.03328421492816505
+    },
+    {
+      "feature": "cat__job_category_Data Science",
+      "importance": 0.025896166113828514
+    },
+    {
+      "feature": "cat__job_title_Technical Product Manager",
+      "importance": 0.022798381559693878
+    },
+    {
+      "feature": "cat__job_title_WordPress Developer",
+      "importance": 0.021278362017595673
+    },
+    {
+      "feature": "cat__location_Lagos",
+      "importance": 0.020717085869279707
+    },
+    {
+      "feature": "cat__company_size_Startup (<50 employees)",
+      "importance": 0.0199147111815215
+    },
+    {
+      "feature": "cat__job_title_Data Analyst",
+      "importance": 0.01982142438773413
+    },
+    {
+      "feature": "cat__job_title_Associate Product Manager",
+      "importance": 0.01826138314897056
+    },
+    {
+      "feature": "cat__education_PhD",
+      "importance": 0.017015078826745977
+    },
+    {
+      "feature": "cat__education_MSc",
+      "importance": 0.01684592228971004
+    },
+    {
+      "feature": "num__remote_ratio",
+      "importance": 0.015928384632315697
+    },
+    {
+      "feature": "cat__job_title_Site Reliability Engineer",
+      "importance": 0.014619511098217701
+    }
+  ],
+  "test_mae": 594569.8144215615,
+  "test_r2": 0.8882971045513743,
+  "model_name": "Combined Ensemble (25% Random Forest + 75% XGBoost)"
+}
